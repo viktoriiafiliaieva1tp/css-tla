@@ -1,0 +1,163 @@
+/* ============================================
+   CSS BACKGROUNDS – ZADANIE DO ĆWICZENIA
+   ============================================
+   Otwórz ten plik i wykonaj polecenia poniżej.
+   Każde zadanie dotyczy odpowiedniej sekcji w HTML.
+   ============================================ */
+
+
+/* --- Podstawowe style  --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+
+.box {
+  padding: 24px;
+  margin-bottom: 30px;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  min-height: 120px;
+}
+
+.tall {
+  min-height: 400px;
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+.intro {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+
+/* ============================================
+   ZADANIE 1: Background Color
+   ============================================
+   Na elemencie #color-box ustaw:
+   - kolor tła na jasnoniebieski (#e0f2fe)
+   - kolor tekstu na ciemnoniebieski (#0c4a6e)
+   ============================================ */
+
+#color-box {
+  background-color: #e0f2fe;
+  color: #0c4a6e;
+}
+
+
+/* ============================================
+   ZADANIE 2: Background Image
+   ============================================
+   Na elemencie #image-box ustaw:
+   - obrazek tła: url("https://picsum.photos/id/1015/800/400")
+   - rozmiar tła: cover
+   - pozycję: center
+   - kolor tekstu na biały i dodaj delikatny cień tekstu
+     (text-shadow: 0 1px 3px rgba(0,0,0,0.7);)
+   ============================================ */
+
+#image-box {
+  background-image: url("https://picsum.photos/id/1015/800/400");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+}
+
+
+/* ============================================
+   ZADANIE 3: Background Repeat
+   ============================================
+   Na elemencie #repeat-box ustaw:
+   - mały obrazek jako tło:
+     url("https://www.transparenttextures.com/patterns/cubes.png")
+   - kolor tła: #fef3c7 (żeby było widać wzór)
+   - background-repeat: repeat;   (spróbuj też: no-repeat, repeat-x, repeat-y)
+   ============================================ */
+
+#repeat-box {
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-color: #fef3c7;
+  background-repeat: repeat;
+}
+
+
+/* ============================================
+   ZADANIE 4: Background Attachment
+   ============================================
+   Na elemencie #attachment-box ustaw:
+   - obrazek tła: url("https://picsum.photos/id/1018/1200/800")
+   - background-size: cover
+   - background-position: center
+   - background-attachment: fixed;
+   - kolor tekstu: biały + text-shadow
+   ============================================
+   Po zapisaniu przewiń stronę – tło powinno „stać w miejscu”.
+   ============================================ */
+
+#attachment-box {
+  background-image: url("https://picsum.photos/id/1018/1200/800");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+}
+
+
+/* ============================================
+   ZADANIE 5: Background Shorthand
+   ============================================
+   Na elemencie #shorthand-box użyj TYLKO jednej właściwości
+   background (skróconej) i ustaw:
+   - kolor: #1e293b
+   - obrazek: url("https://picsum.photos/id/1043/800/500")
+   - no-repeat
+   - center / cover
+   - kolor tekstu: biały
+   ============================================
+   Przykład składni:
+   background: kolor url(...) no-repeat center / cover;
+   ============================================ */
+
+#shorthand-box {
+  background: #1e293b url("https://picsum.photos/id/1043/800/500") no-repeat center / cover;
+  color: #ffffff;
+}
+
+
+/* ============================================
+   ZADANIE 6: Code Challenge (bonus)
+   ============================================
+   Na elemencie #challenge-box stwórz ładną kartę:
+   - tło: gradient + opcjonalnie obrazek (lub sam gradient)
+   - zaokrąglone rogi (border-radius: 16px)
+   - cień (box-shadow)
+   - padding: 32px
+   - tekst wyśrodkowany, biały
+   - możesz użyć background: linear-gradient(...) lub
+     background-image: linear-gradient(...), url(...);
+   ============================================ */
+
+#challenge-box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("image_hb4L6d.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  padding: 32px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border: none;
+}
